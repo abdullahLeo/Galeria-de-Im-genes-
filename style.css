@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+/*font-family: 'Montserrat', sans-serif;*/
+
+:root {
+  --ff-primary: "Montserrat", sans-serif;
+
+  --clr-primary: #4e5150;
+  --clr-secondary: #a9a9a9;
+  --clr-stat: #bdbdbd;
+  --clr-background: #e5e5e5;
+  --clr-footer: #b9bdcf;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff-primary);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 24px;
+  color: var(--clr-primary);
+}
+
+h3 {
+  color: var(--clr-secondary);
+}
+
+h4 {
+  color: var(--clr-stat);
+}
+
+p {
+  color: var(--clr-footer);
+  font-weight: 500;
+}
+
+strong {
+  font-size: 18px;
+  color: var(--clr-primary);
+}
+
+img {
+  border-radius: 16px;
+}
+
+.gallery img {
+  width: 100%;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.profil {
+  line-height: 30px;
+  padding: 20px 0;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+}
+
+.stat {
+  width: 100px;
+  background: var(--clr-background);
+  padding: 10px;
+  margin: 0 20px;
+  border-radius: 12px;
+}
+
+.gallery {
+  display: grid;
+  width: 60%;
+  margin: auto;
+  padding: 30px 0;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px 20px;
+}
+
+.one {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.two {
+  grid-area: 1 / 2 / 2 / 4;
+}
+.three {
+  grid-area: 2 / 1 / 3 / 3;
+}
+.four {
+  grid-area: 2 / 3 / 4 / 4;
+  margin-bottom: 10px;
+}
+.five {
+  grid-area: 3 / 1 / 4 / 2;
+}
+.six {
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+.gallery img {
+  box-shadow: 0 1.4px 1.2px rgba(0, 0, 0, 0.016),
+    0 3.5px 3px rgba(0, 0, 0, 0.022), 0 7.1px 6.2px rgba(0, 0, 0, 0.028),
+    0 14.6px 12.8px rgba(0, 0, 0, 0.034), 0 40px 35px rgba(0, 0, 0, 0.05);
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 800px) {
+  body {
+    font-size: 10px;
+  }
+
+  header img {
+    width: 120px;
+  }
+
+  h1 {
+    font-size: 14px;
+  }
+
+  strong {
+    font-size: 12px;
+  }
+
+  .stat {
+    width: 90px;
+    margin: 0 5px;
+  }
+
+  .gallery {
+    width: 90%;
+  }
+}
